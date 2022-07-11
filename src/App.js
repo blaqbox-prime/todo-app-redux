@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux';
 import './App.css';
+import Banner from './components/bg_Banner/Banner';
+import {setTheme} from './theme'
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
+
+ 
+  const theme = useSelector((state) => state.theme);
+
+  useEffect(() => {
+    setTheme(theme);
+  }, [theme])
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <Banner/>
+      <TodoList />
+    </section>
   );
 }
 

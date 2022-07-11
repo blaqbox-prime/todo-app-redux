@@ -1,0 +1,92 @@
+.TodoList{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    margin-top: -230px;
+}
+
+.TodoList__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.TodoList__header > h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6em;
+    letter-spacing: 18px;
+}
+
+.TodoList__theme{
+    cursor: pointer;
+}
+
+.TodoList__form{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 3em;
+    /* z-index: ; */
+}
+
+.TodoList__form > input{
+    margin-left: 1em;
+    flex: 1;
+    outline: none;
+    border: none;
+}
+
+.TodosList__list{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    box-shadow: 0px 6px 15px 5px rgba(0,0,0,0.32);
+}
+
+.TodosList__footer{
+    padding: 1em;
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.TodoList__filters{
+    display: flex;
+}
+
+.text-button{
+    cursor: pointer;
+    margin-left: 1em;
+    background-color: transparent !important;
+    border: none;
+    font-weight: bold;
+    opacity: .6;
+}
+
+.text-button:hover{
+    color: inherit;
+    opacity: 1;
+}
+
+.text-button.active{
+    color: hsl(220, 98%, 61%) !important;
+}
+
+.TodoList__tip{
+    text-align: center;
+    font-size: small;
+}

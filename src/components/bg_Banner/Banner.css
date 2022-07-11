@@ -1,0 +1,14 @@
+.Banner{
+    z-index: -10;
+    height: 300px;
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Banner__img{
+    width: 100vw;
+    height: 100%;
+
+}

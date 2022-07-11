@@ -1,0 +1,35 @@
+.Todo{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.64);
+    background-color: transparent !important;
+}
+
+
+
+.Todo__left{
+    display: flex;
+    align-items: center;
+}
+
+.Todo__left > p{
+    margin: 0 1em;
+}
+
+.Todo__delete{
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.Todo:hover > .Todo__delete{
+    opacity: 1;
+}
+
+.Todo.completed p{
+    text-decoration: line-through;
+    color: #7f7f7f;
+    opacity: .5;
+}
