@@ -11,7 +11,7 @@ function CircleCheckbox({checked = false, onCheck}) {
   return (
     <div className={`CircleCheckbox themed-container ${checked && 'checked'}`} onClick={onCheck} >
         {checked && <img src="images/icon-check.svg" alt="" className='CircleCheckbox__check'/>}
-        {!checked && <div className="CircleCheckbox__cover"></div> }
+        {!checked && <div className="CircleCheckbox__cover themed-container"></div> }
 
     </div>
   ) 
